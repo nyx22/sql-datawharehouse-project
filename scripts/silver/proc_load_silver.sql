@@ -14,9 +14,10 @@ Parameters:
 	  This stored procedure does not accept any parameters or return any values.
 
 Usage Example:
-    EXEC Silver.load_silver;
+    EXEC silver.load_silver;
 ===============================================================================
 */
+
 
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 BEGIN
@@ -251,3 +252,5 @@ BEGIN
 		PRINT '=========================================='
 	END CATCH
 END
+
+EXEC silver.load_silver;
